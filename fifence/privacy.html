@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - FiFence</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 { color: #111713; border-bottom: 2px solid #68E07C; padding-bottom: 10px; }
+        h2 { color: #1B211C; margin-top: 30px; }
+        p { margin-bottom: 15px; }
+        ul { margin-bottom: 15px; }
+        li { margin-bottom: 8px; }
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+        a { color: #39B95B; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Privacy Policy</h1>
+    <p><strong>Last Updated: June 10, 2026</strong></p>
+
+    <p>
+        This Privacy Policy describes how <strong>Lorewound</strong> ("we," "us," or "our") handles information when you use our mobile application, <strong>FiFence</strong> (the "App").
+    </p>
+    <p>
+        By downloading or using the App, you agree to the terms of this Privacy Policy.
+    </p>
+
+    <h2>1. Information We Collect</h2>
+    <p>
+        FiFence is a local-first subscription tracker. Your subscription data (service names, prices, billing cycles, renewal dates, categories, payment method nicknames, and notes) is stored <strong>locally on your device</strong> using SQLite.
+    </p>
+    <p>
+        When you optionally sign in with a Supabase account, your subscription data is synced to our secure cloud database to enable multi-device access. This sync is end-to-end encrypted and protected by Row Level Security (RLS) — only you can access your own data.
+    </p>
+    <p>
+        <strong>We do not collect:</strong> full credit card numbers, CVV codes, bank account details, location data, contacts, browsing history, or any biometric information.
+    </p>
+
+    <h2>2. Payment Information</h2>
+    <p>
+        FiFence uses <strong>RevenueCat</strong> to manage in-app purchases (FiFence Pro subscription). All payment processing is handled securely by Apple (App Store) or Google (Play Store). We never receive or store your credit card information.
+    </p>
+    <p>
+        Payment method entries in the App store only metadata: a nickname (e.g., "Chase Visa"), card type, bank/network name, card color, and optionally the last 4 digits for identification. We never request or store full card numbers or CVV codes.
+    </p>
+
+    <h2>3. Third-Party Services</h2>
+    <p>The App integrates with the following services:</p>
+    <ul>
+        <li><strong>Supabase</strong> — secure cloud database for optional data sync (encrypted, RLS-protected)</li>
+        <li><strong>RevenueCat</strong> — in-app purchase management (no personal data shared beyond purchase verification)</li>
+        <li><strong>Brandfetch</strong> — optional service logo retrieval by domain name</li>
+        <li><strong>open.er-api.com</strong> — exchange rate data for currency conversion (no user data sent)</li>
+    </ul>
+    <p>
+        No user data is shared with advertising networks, analytics services, or data brokers.
+    </p>
+
+    <h2>4. Data Storage and Security</h2>
+    <p>
+        Your subscription data is primarily stored locally on your device using SQLite. When sync is enabled, data is transmitted over HTTPS to Supabase servers and protected by Row Level Security, ensuring only you can access your records.
+    </p>
+    <p>
+        You can delete all locally stored data at any time by uninstalling the App. To delete synced cloud data, use the "Delete Account" option in the App's Settings, which permanently removes all your data from our servers.
+    </p>
+
+    <h2>5. Children's Privacy</h2>
+    <p>
+        FiFence does not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal data, please contact us.
+    </p>
+
+    <h2>6. Changes to This Privacy Policy</h2>
+    <p>
+        We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last Updated" date. Continued use of the App after changes constitutes acceptance of the updated policy.
+    </p>
+
+    <h2>7. Contact Us</h2>
+    <p>
+        If you have questions about this Privacy Policy or your data:
+    </p>
+    <p>
+        <strong>Developer:</strong> Gazi Enes Sedef (Lorewound)<br>
+        <strong>Email:</strong> <a href="mailto:support@lorewound.com">support@lorewound.com</a>
+    </p>
+
+    <div class="footer">
+        &copy; 2026 Lorewound. All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>
