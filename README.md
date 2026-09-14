@@ -1,47 +1,57 @@
-<!-- lorewound:standard:start -->
 # Legal Docs
 
 <div align="center">
-  <p><strong>Central legal documentation for Lorewound projects</strong></p>
+  <p><strong>Canonical legal documentation for the Lorewound portfolio.</strong></p>
   <p>Created by Gazi Enes Sedef · Published by Lorewound</p>
-
-  ![Status](https://img.shields.io/badge/status-active-111827?style=flat-square)
-  ![Publisher](https://img.shields.io/badge/publisher-Lorewound-111827?style=flat-square)
 </div>
 
-## ◈ Overview
+## Overview
 
-Legal Docs is the canonical home for general legal material used across the Lorewound project portfolio. It is intended to collect privacy notices, terms, disclosures, and other shared legal documentation while project-specific exceptions remain documented in their own repositories.
+Legal Docs is the central repository for privacy notices, terms, disclosures and shared legal material used by Lorewound projects. It gives the portfolio one maintained reference point while allowing a project to keep a specific notice in its own folder when its data, platform or store behavior differs.
 
-## ✦ Highlights
+This repository records text and presentation. It does not turn an unreviewed draft into approved legal advice, and automated checks cannot replace owner/legal review.
 
-- Portfolio-wide legal documentation
-- Privacy, terms, and disclosure pages
-- Central reference for project-specific legal links
+## Repository model
 
-## ⬡ Technology
+| Area | Responsibility |
+| --- | --- |
+| Root pages and assets | Shared index, presentation and portfolio-level notices |
+| `false-clue/` | False Clue-specific legal material |
+| `fifence/` | FiFence-specific legal material |
+| Git history | Reviewable changes, effective text and provenance |
 
-- HTML, CSS, and JavaScript
+Use one authoritative copy for each notice. If a project-specific document diverges from a general policy, state the project name, scope and effective date. Do not maintain two silently different copies of the same policy.
 
-## ▣ Platforms
+## Editing and review
 
-- Modern web browsers
+1. Identify the project, platform and actual data/service behavior covered.
+2. Update the smallest authoritative document.
+3. Check product names, publisher, contact address, dates and cross-links.
+4. Review the rendered page and raw Markdown/HTML.
+5. Obtain explicit human approval before treating a revision as effective or publishing it.
 
-## ▶ Getting Started
+Documents use concise headings, readable line lengths and ordinary language. Legal meaning has priority over decorative branding. Tables should remain readable on narrow screens, and links need useful labels.
 
-```text
-Open index.html in a modern browser
-```
+## Local use
 
-Use the versions recorded in the repository lockfiles and manifests. Secrets belong in ignored local environment files or the deployment platform's secret store; never place credentials in client code or commits.
+The repository is primarily static HTML, CSS, JavaScript and text. Open `index.html` in a modern browser or use a simple local static server when browser security rules require it. No application database or hosted API is required.
 
-## ✓ Quality and Maintenance
+Runtime/build/service boundaries are recorded in [SERVICES.md](SERVICES.md). Maintenance and formatting rules are in [GUIDELINES.md](GUIDELINES.md). Private vulnerability or accidental-disclosure reports follow [SECURITY.md](SECURITY.md).
 
-- Maintenance policy: [MAINTENANCE.md](MAINTENANCE.md)
-- Shared legal documentation: [Lorewound Legal Docs](https://github.com/katsopolis/Legal-Docs)
-- Repository: [https://github.com/katsopolis/Legal-Docs](https://github.com/katsopolis/Legal-Docs)
+## Security and privacy
 
-## ◇ Ownership and Publishing
+Do not place secrets, account credentials, access codes, private addresses or unnecessary personal data in legal pages or repository history. Public contact text uses [support@lorewound.com](mailto:support@lorewound.com). Verify external links and ensure a legal page does not promise a feature, deletion path or retention period that the product does not actually implement.
+
+## Publication checklist
+
+- Correct project and publisher names.
+- Correct contact address and effective/update dates.
+- Accurate description of data collection, storage, deletion and third parties.
+- Consistent language between store listing, application and legal page.
+- Working project/legal links on desktop and mobile.
+- Explicit approval for the final text.
+
+## Ownership and publishing
 
 | Role | Details |
 | --- | --- |
@@ -50,11 +60,6 @@ Use the versions recorded in the repository lockfiles and manifests. Secrets bel
 | Contact | [support@lorewound.com](mailto:support@lorewound.com) |
 | Repository owner | [katsopolis](https://github.com/katsopolis) |
 
-## ⚖ License
+## License
 
-This project is proprietary and is not open source. No use, execution, copying, modification, distribution, hosting, or commercial exploitation is permitted without prior written permission. See [LICENSE](LICENSE). Third-party components and assets remain subject to their respective licenses.
-<!-- lorewound:standard:end -->
-
-## Operational documentation
-
-[Security policy](SECURITY.md)
+The repository's original material is proprietary and all rights are reserved. No use, copying, modification, distribution, hosting or commercial exploitation is permitted without prior written permission. See [LICENSE](LICENSE). Third-party notices and quoted legal sources retain their own rights.
